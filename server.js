@@ -1,17 +1,32 @@
-const http = require("http");
+const express = require("express");
+const path = require("path");
+const app = express();
 const port = 3000;
 
-const server = http.createServer((req, res) => {
-  if (req.url === "/") {
-    res.end("welcome");
-  }
-  if (req.url === "/home") {
-    res.end("you are a bitch ");
-  } else {
-    res.end(`
-        <h1>fuck you</h1>
-        `);
-  }
+const { prodacts } = require("./data");
+
+app.use(express.static("./public"));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "./index.html"));
 });
 
-server.listen(port);
+app.get("/api", (req, res) => {
+  res.send('<h1>klick this</h1><a href="/api/prodact">here</a>');
+});
+
+app.get("/api/prodact", (req, res) => {
+  res.json(prodacts);
+});
+
+// app.get("/json", (req, res) => {
+//   res.json(prodacts);
+// });
+
+app.use((req, res, next) => {
+  res.status(404).send("<h1>404 - Page Not Found</h1>");
+});
+
+app.listen(port, () => {
+  console.log(`we are at ${port} port`);
+});
