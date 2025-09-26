@@ -1,29 +1,49 @@
-const prodacts = [
+const products = [
   {
-    id: "rec1xvvrU9HjFRJ3B4",
+    id: 1,
     name: "Best of Ireland in 14 Days Tour",
-    info: "Rick Steves' Best of Ireland tour kicks off with the best of Dublin, followed by Ireland's must-see historical sites, charming towns, music-filled pubs, and seaside getaways – including Kinsale, the Dingle Peninsula, the Cliffs of Moher, the Aran Islands, Galway, Connemara, Giant's Causeway, and the compelling city of Belfast. All along the way, Rick's guides will share their stories to draw you in to the Emerald Isle, and the friendliness of the people will surely steal your heart. Join us for the Best of Ireland in 14 Days!",
+    info: "Explore Dublin, Kinsale, the Dingle Peninsula, and more! This 14-day adventure covers Ireland’s most iconic sights, with cozy pubs, green landscapes, and the warmth of Irish hospitality.",
     image:
       "https://dl.airtable.com/.attachments/6c24084000a3777064c5200a8c2ae931/04081a3e/ireland.jpeg",
     price: "3,895",
   },
   {
-    id: "recJLWcHScdUtI3ny",
-    name: "Best of Salzburg & Vienna in 8 Days Tour",
-    info: "Let's go where classical music, towering castles, and the-hills-are-alive scenery welcome you to the gemütlichkeit of Bavaria and opulence of Austria's Golden Age. Your Rick Steves guide will bring this region's rich history and culture to life in festive Munich, Baroque Salzburg, sparkling Lake Hallstatt, monastic Melk, the blue Danube, and royal Vienna – with cozy villages and alpine vistas all along the way. Join us for the Best of Munich, Salzburg & Vienna in 8 Days!",
+    id: 2,
+    name: "Best Salzburg & Vienna in 8 Days Tour",
+    info: "Travel through the heart of Austria and southern Germany. See fairy-tale castles, enjoy Mozart’s legacy in Salzburg, and savor Viennese coffeehouse culture in just 8 unforgettable days.",
     image:
       "https://dl.airtable.com/.attachments/27f6cbef631e303f98b97e9dafcf25b/6bbe2a07/vienna.jpeg",
     price: "2,695",
   },
   {
-    id: "recK2Ao0vhIHPLUwn7",
+    id: 3,
     name: "Best of Rome in 7 Days Tour",
-    info: "Our Rome tour serves up Europe’s most intoxicating brew of dazzling art, earth-shaking history, and city life with style. On this Rome vacation, your tour guide will resurrect the grandeur of ancient Rome's Colosseum, Forum, Pantheon, and nearby Ostia Antica. From the Renaissance and Baroque eras, you'll marvel at St. Peter’s Basilica, the Vatican Museums, Sistine Chapel, and Borghese Gallery. You’ll also enjoy today’s Rome, with neighborhood walking tours, memorable restaurants, and time to explore on your own. Join us for the Best of Rome in 7 Days!",
+    info: "Discover the Eternal City with expert guides. From the Colosseum to the Vatican, experience the history, food, and culture of Rome in an action-packed 7-day trip.",
     image:
       "https://dl.airtable.com/.attachments/3efa7aa402d49c12b8769c581a96af42/d5b641e3/italy.jpeg",
     price: "2,095",
   },
+  {
+    id: 4,
+    name: "Highlights of Japan in 10 Days Tour",
+    info: "Experience the contrast of tradition and tech as you explore Tokyo, Kyoto, Nara, and Mount Fuji. A perfect blend of temples, sushi, neon lights, and cherry blossoms.",
+    image: "https://images.unsplash.com/photo-1549692520-acc6669e2f0c",
+    price: "4,150",
+  },
+  {
+    id: 5,
+    name: "Scenic Switzerland in 9 Days Tour",
+    info: "Travel by scenic trains and explore Swiss towns like Lucerne, Interlaken, and Zermatt. Witness the Alps, taste local chocolate, and breathe in the fresh mountain air.",
+    image: "https://images.unsplash.com/photo-1509644853930-7c6b9a9c470d",
+    price: "3,750",
+  },
+  {
+    id: 6,
+    name: "Wonders of Morocco in 12 Days Tour",
+    info: "From bustling Marrakech to the sands of the Sahara, this 12-day tour is an immersion into Moroccan culture, architecture, spice markets, and desert adventures.",
+    image: "https://images.unsplash.com/photo-1506416672333-99f6c57b2202",
+    price: "2,980",
+  },
 ];
 
-
-module.exports = { prodacts };
+module.exports = { products };
